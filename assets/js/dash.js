@@ -192,8 +192,8 @@ addItemBtn.addEventListener('click', addItemList);
 // updateBtn.addEventListener('click', updateHandlerHan);
 detailsBtn.addEventListener('click', updateItemList);
 // updatestockBtn.addEventListener('click', updateHandlerStock);
-canUp.addEventListener('click', closeModalUp)
-canUps.addEventListener('click', closeModalUps)
+// canUp.addEventListener('click', closeModalUp)
+// canUps.addEventListener('click', closeModalUps)
 
 //------------------------------------------------------------------------------
 const editItem = (id) => {
