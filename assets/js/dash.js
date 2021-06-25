@@ -4,7 +4,7 @@ const desc = document.getElementById('desc');
 const addbtn = document.getElementById('addBtn');
 const cancelBtn = addMovieModal.querySelector('.btn--passive')
 const addItemBtn = addMovieModal.querySelector('.btn--success')
-const updatedModal = document.getElementById('itemTotal');
+const updatedModal = document.getElementById('add-updated');
 const updateBtn = document.getElementById('stock');
 const updatestockBtn = document.getElementById('stocks');
 const itemTotalDiv = document.getElementById('itemTot');
@@ -105,7 +105,9 @@ const showAddItem = () => {
 }
 const addItemList = () => {
     insertNewItem();
-    resetForm;
+    addMovieModal.classList.remove('visible')
+    backdrop.classList.remove('visible')
+    location.reload()
 }
 
 
@@ -118,15 +120,17 @@ const updateItemList = () => {
 const closeModal = () => {
     addMovieModal.classList.remove('visible')
     backdrop.classList.remove('visible')
-
+    location.reload()
 }
 const closeModalUp = () => {
     updatedModal.classList.remove('visible')
     backdrop.classList.remove('visible')
+    location.reload()
 }
 const closeModalUps = () => {
     updateStckModal.classList.remove('visible')
     backdrop.classList.remove('visible')
+    location.reload()
 }
 
 
@@ -174,11 +178,7 @@ function prepareTable(prodName, deSc, quantic, categ) {
     cell5.innerHTML = `<button class ="edit">Edit</button>
                         <button class="del">Delete</button>`
     cell4.classList.add('qtyCell')
-}
 
-
-
-function resetForm() {
     prodName.value = "";
     deSc.value = "";
     quantic.value = ""
@@ -186,16 +186,13 @@ function resetForm() {
 }
 
 
+
+
 addbtn.addEventListener('click', showAddItem);
 cancelBtn.addEventListener('click', closeModal);
 addItemBtn.addEventListener('click', addItemList);
-// updateBtn.addEventListener('click', updateHandlerHan);
 detailsBtn.addEventListener('click', updateItemList);
-// updatestockBtn.addEventListener('click', updateHandlerStock);
-// canUp.addEventListener('click', closeModalUp)
-// canUps.addEventListener('click', closeModalUps)
 
-//------------------------------------------------------------------------------
 const editItem = (id) => {
     let prodName = document.getElementById("pname")
     let deSc = document.getElementById("pdescript")
