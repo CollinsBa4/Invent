@@ -4,9 +4,12 @@ const desc = document.getElementById('desc');
 const addbtn = document.getElementById('addBtn');
 const cancelBtn = addMovieModal.querySelector('.btn--passive')
 const addItemBtn = addMovieModal.querySelector('.btn--success')
-const updatedModal = document.getElementById('add-updated');
+const updatedModal = document.getElementById('itemTotal');
 const updateBtn = document.getElementById('stock');
 const updatestockBtn = document.getElementById('stocks');
+const itemTotalDiv = document.getElementById('itemTot');
+const itemTotDiv = document.getElementById('itemTotal');
+const catTotDiv = document.getElementById('catTotal');
 const detailsBtn = document.getElementById('details');
 const detailStockBtn = document.getElementById('detailStock');
 const updateStckModal = document.getElementById('add-stock')
@@ -50,6 +53,9 @@ window.addEventListener('load', () => {
             cel.classList.add('allmostOutOfStock')
         } else { cel.classList.add('inStock') }
     })
+    itemTotDiv.innerHTML = JSON.parse(localStorage.itemsRecord).length;
+    catTotDiv.innerHTML = 5;
+    // ​sel.options.length;
 });
 // window.addEventListener('load', dasvalues);
 
