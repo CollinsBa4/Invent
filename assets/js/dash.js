@@ -192,7 +192,7 @@ addbtn.addEventListener('click', showAddItem);
 cancelBtn.addEventListener('click', closeModal);
 addItemBtn.addEventListener('click', addItemList);
 detailsBtn.addEventListener('click', updateItemList);
-
+canUp.addEventListener('click', closeModalUp)
 const editItem = (id) => {
     let prodName = document.getElementById("pname")
     let deSc = document.getElementById("pdescript")
