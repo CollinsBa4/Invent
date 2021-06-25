@@ -54,7 +54,7 @@ window.addEventListener('load', () => {
         } else { cel.classList.add('inStock') }
     })
     itemTotDiv.innerHTML = JSON.parse(localStorage.itemsRecord).length;
-    catTotDiv.innerHTML = 5;
+    catTotDiv.innerHTML = 4;
     // ​sel.options.length;
 });
 // window.addEventListener('load', dasvalues);
