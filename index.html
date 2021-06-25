@@ -15,7 +15,7 @@
 
 
 <body>
-
+    <div class="backdrop"></div>
     <div class="modal" id="add-modal">
         <div class="modal__content">
 
@@ -27,84 +27,88 @@
             <label for="Quantity">Quantity</label>
             <input type="number" name="available" id="quant" />
             <label for="Category">Category</label>
-            <input type="text" name="categ-url" id="cat" />
+            <!-- <input type="text" name="categ-url" id="cat" /> -->
+            <select class="category Select " id="cat ">
+                <option class="category" value="Provisions ">Provisions</option>
+                <option class="category" value="Stationaries ">Stationaries</option>
+                <option class="category" value="Toiletries ">Toiletries</option>
+                <option class="category" value="Cosmetics ">Cosmetics</option>
+            </select>
 
         </div>
-        <div class="modal__actions">
-            <button class="btn btn--passive">Cancel</button>
-            <button class="btn btn--success">Add</button>
+        <div class="modal__actions ">
+            <button class="btn btn--passive ">Cancel</button>
+            <button class="btn btn--success ">Add</button>
         </div>
     </div>
 
 
-    <div class="modal" id="add-updated">
-        <div class="modal__content">
+    <div class="modal " id="add-updated ">
+        <div class="modal__content ">
 
             <h1>UPDATE PRODUCT</h1>
-            <label for="Product">Product</label>
-            <input type="text" name="Product" id="pname" />
-            <label for="description">description</label>
-            <input type="text" name="describe" id="pdescript" />
-            <label for="Quantity">Quantity</label>
-            <input type="number" name="available" id="pquant" />
-            <label for="Category">Category</label>
-            <input type="text" name="categ-url" id="pcat" />
+            <label for="Product ">Product</label>
+            <input type="text " name="Product " id="pname " />
+            <label for="description ">description</label>
+            <input type="text " name="describe " id="pdescript " />
+            <label for="Quantity ">Quantity</label>
+            <input type="number " name="available " id="pquant " />
+            <label for="Category ">Category</label>
+            <input type="text " name="categ-url " id="pcat " />
 
         </div>
-        <div class="modal__actions">
-            <button class="btn btn--passive">Cancel</button>
-            <button class="btn btn--success" id="details">Update</button>
+        <div class="modal__actions ">
+            <button class="btn btn--passive ">Cancel</button>
+            <button class="btn btn--success " id="details ">Update</button>
         </div>
     </div>
-    <div class="modal" id="add-stock">
-        <div class="modal__content">
+    <div class="modal " id="add-stock ">
+        <div class="modal__content ">
 
             <h1>UPDATE PRODUCT</h1>
-            <label for="Product">Product</label>
-            <input type="text" name="Product" id="psname" />
-            <label for="Quantity">Quantity</label>
-            <input type="number" name="available" id="psquant" />
+            <label for="Product ">Product</label>
+            <input type="text " name="Product " id="psname " />
+            <label for="Quantity ">Quantity</label>
+            <input type="number " name="available " id="psquant " />
 
         </div>
-        <div class="modal__actions">
-            <button class="btn btn--passive">Cancel</button>
-            <button class="btn btn--success" id="detailStock">Update</button>
+        <div class="modal__actions ">
+            <button class="btn btn--passive ">Cancel</button>
+            <button class="btn btn--success " id="detailStock ">Update</button>
         </div>
     </div>
 
-    <!-- <div class="delete-modal" id="delete-modal">
-        <h2 class="modal__title">Are you sure?</h2>
-        <p class="modal__content">
+    <!-- <div class="delete-modal " id="delete-modal ">
+        <h2 class="modal__title ">Are you sure?</h2>
+        <p class="modal__content ">
             Are you sure you want to delete this item? This action can't be made undone!
         </p>
-        <div class="modal__actions">
-            <button class="btn btn--passive">No (Cancel)</button>
-            <button class="btn btn--danger">Yes</button>
+        <div class="modal__actions ">
+            <button class="btn btn--passive ">No (Cancel)</button>
+            <button class="btn btn--danger ">Yes</button>
         </div>
     </div> -->
 
-    <header class="header">
-        <img src="assets/images/favicon.ico" alt="icon">
+    <header class="header ">
+        <img src="assets/images/favicon.ico " alt="icon ">
         <h1>
             Inventory Management System
         </h1>
 
     </header>
 
-    <div class="container">
-        <div class="sidebar">
+    <div class="container ">
+        <div class="sidebar ">
 
-            <a id="update">Dashboard</a>
-            <a id="addBtn">Add Item</a>
-            <a id="stock">Update Details</a>
-            <a id="stocks">Update Stock</a>
-            <a href="login.html" id="update">Logout</a>
+            <a id="update ">Dashboard</a>
+            <a id="addBtn ">Add Item</a>
+            <a href="login.html " id="update ">Logout</a>
         </div>
-        <div class="main">
+        <div class="main ">
 
-            <div class="main2">
-                <input type="search" placeholder="Search">
-                <table class="list" id="desc">
+            <div class="main2 ">
+                <input type="search " placeholder="Search ">
+                <table class="list " id="desc ">
                     <thead>
                         <tr>
                             <th>Product</th>
@@ -123,15 +127,15 @@
                 </table>
             </div>
         </div>
-        <div class="main1">
-            <div id="others">
+        <div class="main1 ">
+            <div id="otherit ">
                 <span>Total number of Items</span>
                 <span></span>
             </div>
-            <div id="others"><span>Items in stock</span>
+            <div id="otherst "><span>Items in stock</span>
                 <span></span>
             </div>
-            <div id="others">
+            <div id="others ">
                 <span></span>
                 <span></span>
             </div>

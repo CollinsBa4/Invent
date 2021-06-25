@@ -56,7 +56,9 @@
                         text-align: center;
                     }
                     
-                    #others {
+                    #others,
+                    #otherit,
+                    #otherst {
                         font: inherit;
                         padding: 0.5rem 1.5rem;
                         /* border: 1px solid #00329e; */
@@ -254,7 +256,7 @@
                         padding: 0;
                     }
                     
-                    #backdrop {
+                    .backdrop {
                         position: fixed;
                         width: 100%;
                         height: 100vh;
@@ -266,7 +268,7 @@
                         display: none;
                     }
                     
-                    #backdrop.visible {
+                    .backdrop.visible {
                         display: block;
                         pointer-events: all;
                     }
@@ -366,6 +368,14 @@
                         height: 35px;
                     }
                     
-                    tr:nth-child(even) {
-                        background-color: gray;
+                    .outOfStock {
+                        background-color: red;
+                    }
+                    
+                    .allmostOutOfStock {
+                        background-color: orange;
+                    }
+                    
+                    .inStock {
+                        background-color: green;
                     }
