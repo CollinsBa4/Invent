@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+}
+
+.imgcon {
+    display: flex;
+    width: 50%;
+    background-color: #405BCC;
+    height: 100vh;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.login {
+    margin: 170px 170px;
+    padding: 40px;
+    color: #405BCC;
+    border: 1px solid #405BCC;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 8px;
+}
+
+.login .user {
+    display: flex;
+    flex-direction: column;
+}
+
+.login .user .modal__actions {
+    margin-top: 40px;
+}
+
+.imgcon h1 {
+    margin-top: 20%;
+    color: #ffffff;
+    text-align: center;
+}
+
+.imgcon img {
+    opacity: 0.5;
+}
+
+input {
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.26);
+}
